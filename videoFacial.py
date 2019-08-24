@@ -1,6 +1,8 @@
 import numpy as np
 import cv2
 
+#detection de face
+
 face_cascade = cv2.CascadeClassifier("tools/data/haarcascade_frontalface_alt2.xml")
 cap = cv2.VideoCapture(0)
 while(True):
@@ -16,7 +18,7 @@ while(True):
         roi_color = frame[y:y+h, x:x+w]
         img_item = "myface.jpg"
         cv2.imwrite(img_item, roi_gray)
-        
+
         color = (255, 0, 0)
         stroke = 2
         end_cord_x = x + w

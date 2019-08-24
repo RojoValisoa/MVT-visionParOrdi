@@ -1,5 +1,8 @@
 import cv2
 
+
+#Detection de face 
+
 def detect(path):
     img = cv2.imread(path) 
     cascade = cv2.CascadeClassifier("./tools/data/haarcascade_frontalface_alt.xml")
