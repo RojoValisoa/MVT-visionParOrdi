@@ -23,5 +23,5 @@ def box(rects, img):
     for x1, y1, x2, y2 in rects:
         cv2.rectangle(img, (x1, y1), (x2, y2), (127, 255, 0), 2)
     cv2.imwrite('./facial/facial.jpg', img);
-rects, img = detect("./face/dinasitraka.jpg")
+rects, img = detect("./face/cadre.jpg")
 box(rects, img)
